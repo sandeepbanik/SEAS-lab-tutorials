@@ -1,0 +1,633 @@
+/*
+COLORS
+
+PURPLE: #996699;
+TAB BLUE BG: #BBBBFF;
+
+
+Purples
+-------
+LINK HOVER:       #660066
+PURPLE TEXT:      #660066
+
+Blues
+-----
+TABLE LISTING BG: #CCCCFF
+MINITAB BG:       #CCCCFF
+LINK TEXT:        #00008B
+
+
+Other
+----
+PAGE BACKGROUND:  white
+MENU TAB TEXT:    white
+*/
+
+
+
+
+/* *******************************************************
+                                       ALL PAGES
+   ******************************************************* */
+
+
+/* *********
+   GENERIC
+   ********* */
+
+
+
+
+/* *********
+   MAIN BODY
+   ********* */
+
+
+#main {
+	font-size:small;
+	margin: 0px 30px 0px 50px;
+	font-family: helvetica,arial,sans-serif;
+	clear:both;
+	padding-top:50px;
+}
+
+A {
+	color: #00008B;
+	text-decoration:none;
+}
+
+#main A:hover {
+	color:#660066;
+	text-decoration:underline;
+}
+
+
+/* *********
+   BANNER
+   ********* */
+
+#banner {
+	background: url("../images/general/Banner.jpg") no-repeat left top;
+	width:421px;
+	height:60px;
+}
+
+#banner A {
+   display:block; 
+   width:100%;
+   height:100%;
+}
+
+/* *********
+   MENU TABS
+   ********* */
+
+#menu_tabs {
+	float: right;
+	background: transparent;
+	width:100%;
+	font-family: helvetica,arial,sans-serif;
+	font-size: 11px;
+	line-height: normal;
+}
+
+#menu_tabs ul {
+	margin:0;
+	list-style:none;
+}
+
+#menu_tabs li {
+	float:right;
+}
+
+#menu_tabs a {
+	display: block;
+	width: 100px;
+	height: 21px;
+	background: url("../images/general/Tab.gif") no-repeat center bottom;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+#menu_tabs li#current_tab a { 
+	background: url("../images/general/TabSel.gif") no-repeat center bottom;
+}
+
+#menu_tabs a:hover {
+	background: url("../images/general/TabHover.gif") no-repeat center bottom;
+	text-decoration: none;
+}
+
+
+/* *********
+   SEC HEAD
+   ********* */
+
+
+#sechead {
+	clear:both;
+	border:none;
+	background-color:#996699; 
+	color:white;
+}
+
+#sechead h1, #sechead h2{
+	padding-left:5px;
+	font-size:1em;
+	margin:0px;
+}
+
+#sechead h1 {
+	font-weight:bold;
+}
+
+#sechead h1 A {
+	color:white;
+}
+
+#sechead h2 {
+	background-color:white;
+	color:#996699;
+	font-weight:normal;
+}
+
+
+/* *********
+   FOOTER
+   ********* */
+
+
+#foot {
+	clear:both;
+	height:80px;
+	margin-top:50px;
+}
+
+#bottom_links {
+	margin-top:30px;padding:0 0 4px 0;
+	background-color: #CCCCFF;
+	/* preload hover tab as irrelevant background */
+	background: #CCCCFF url("../images/general/TabHover.gif") no-repeat;
+	background-position:-1000px -1000px;
+}
+
+#bottom_links A {
+	color:#ffc;
+	font-size:9px;
+	padding:2px 5px; margin: 0 6px;
+    border:1px solid white;
+}
+
+#copyline {
+	font-size:10px; 
+	float:right;
+	color:#660066; 
+}
+
+
+/* *******************************************************
+                                       MINITABS
+   ******************************************************* */
+
+
+/* *********
+   GENERAL (TOP)
+   ********* */
+
+.menu_minitab ul {
+	margin: 0px; 
+	float:right;
+	display: block;
+	list-style-type: none;
+	clear:both;
+}
+
+.menu_minitab li {
+	display: inline;
+	font: 11px helvetica,arial,sans-serif;
+}
+
+.menu_minitab li.title {
+    display:block;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:3px;
+}
+
+.menu_minitab a:link, .menu_minitab a:visited {
+	background-color:#ccccFF;
+	float:left;
+	border-bottom: 1px solid #996699;
+	padding: 3px 12px 6px 12px;
+	text-decoration: none;
+}
+
+.menu_minitab a:hover,
+.menu_minitab li.selected a,
+.menu_minitab li.selected a:link,
+.menu_minitab li.selected a:visited {
+	background: url(../images/general/minitab.gif) no-repeat bottom center;
+	color: #660066;
+	font-weight:normal;
+}
+
+
+/* *********
+   LEFT HEADER AND DICT TABS
+   ********* */
+
+
+#subsecmenu .menu_minitab UL,
+#dictsecmenu .menu_minitab UL {
+	float:none;
+}
+
+#dictsecmenu .menu_minitab UL LI A {
+	font-family:monospace;
+}
+
+
+/* *********
+   FOOTER TABS
+   ********* */
+
+
+#foot .menu_minitab UL {
+	padding-left:40px;
+	display:block;
+	float:none;
+	background-color:white;
+	border-top: none;
+}
+
+#foot .menu_minitab A {
+	background-color:white;
+}
+
+#foot .menu_minitab LI.title {
+	float:left;
+	display:inline;
+	font:12px serif; 
+	font-weight:bold; 
+	color:#660066;
+	padding: 3px 12px 6px 12px;
+}
+
+
+
+/* *******************************************************
+                                       PARTS OF MAIN
+   ******************************************************* */
+
+
+/* *********
+   SECTION HEAD
+   ********* */
+
+
+.sechead {
+	background-color:#996699; 
+	color:white;
+	font-weight:bold;
+}
+
+
+/* *********
+   LANDING TEXT
+   ********* */
+
+
+.landingtext H1 {
+	font-size:14px;
+	color: #00008B;
+}
+
+.landingtext A {
+	font-weight:bold;
+}
+
+.landingtext .quote {
+	width:60%;
+	margin-bottom:20px;
+}
+
+
+/* *********
+   BLURB
+   ********* */
+
+
+#blurb {
+	margin-top:20px;
+}
+
+
+/* *********
+   LISTING
+   ********* */
+
+
+.listing{
+	width:100%;
+	border-collapse: separate;
+	border-spacing:1px;
+	font-size:13px;
+}
+
+.listing TR.b1, .listing TR.b2 {
+	background-color: #CCCCFF;
+}
+
+.listing DIV.desc,
+.listing DIV.subtitle,
+.listing TD.spe,
+.listing TD .field{
+	font-size:10px;
+}
+
+.listing DIV.subtitle {
+	color:#00008b;
+}
+
+.listing TH {
+	color:white;
+	background-color:#996699; 
+	padding:10px;
+	border-bottom:5px solid white;
+	text-align:left;
+	vertical-align:top;
+/*
+	text-align:left;
+	padding:10px;
+	color:#00008b;
+*/
+}
+
+.listing TD  {
+	margin:0;
+	padding:10px;
+	border-bottom:5px solid white;
+}
+
+.listing TD.image, .listing TH.image {
+	padding:3px;
+	text-align:center;
+	width:66px;
+}
+
+.listing TD.for {
+	width:68px;
+}
+
+.listing TD.for IMG , .listing TD.smallfor IMG {
+	padding-right:5px;
+	border: none;
+}
+
+.listing H2 {
+   font-size:14px;
+   font-style:italic;
+   color:#660066;
+}
+
+/* *********
+   LANDING MENU
+   ********* */
+
+
+.landingmenu TABLE{
+	margin-top:-40px;
+	border:1px dashed #660066;
+	float:right; 
+	margin-left:3em;
+}
+
+.landingmenu IMG{
+	border:0;
+}
+
+.landingmenu TD  {
+	background-color: #CCCCFF;
+	margin:0;
+	padding:10px;
+	border-bottom: 2px solid white;
+	vertical-align:bottom;
+}
+
+.landingmenu TD.icon {
+	padding:2px;
+	padding-bottom:0;
+	background-color: #CCCCFF;
+	vertical-align:bottom;
+}
+
+.landingmenu A {
+	font-weight:bold;
+}
+
+
+
+/* *******************************************************
+                                       SPECIAL PAGES
+   ******************************************************* */
+
+
+/* *********
+   SUBSECTION LANDING PAGES
+   ********* */
+
+ 
+LI.sublist {
+	list-style:none;
+	border:1px solid white; /* IE hack to lose the top margin */
+}
+
+LI.sublist A {
+	font-weight:normal;
+}
+
+
+/* *********
+   SEARCH
+   ********* */
+
+#search TABLE {
+	margin-left:auto;
+	margin-right:auto;
+	border: solid 2px #9999DD;
+	background: #CCCCFF;
+	width: 350px;
+}
+
+#search table TR, #search table TD{
+	color: #00008B;
+}
+
+#search table TD.searcht {
+	background: #996699; 
+	height: 20px;
+	padding-left:5px;
+	font-weight: bold;
+	font-size: smaller;
+	font-family: "MS Sans Serif", sans-serif;
+	color: white;
+}
+
+#search table TD.searcho {
+	text-align: center;
+	font-style: italic;
+	font-weight:bold;
+	padding-top:8px;
+	padding-bottom:8px;
+	background: transparent; 	
+	color: #996699;
+}
+
+#search table TD.searchr {
+	text-align: right;
+	font-weight: bold;
+	font-size:12px;
+}
+
+#search SELECT, INPUT.select {
+	color: #00008B;
+	padding:0px;
+	background: white;
+	width: 220px;
+}
+
+#search INPUT.button {
+	color: #00008b;
+	width: 120px;
+}
+
+
+/* *********
+   DICTIONARY
+   ********* */
+
+
+#def_term {
+	clear:both;
+	padding-top:20px;
+
+}
+
+#def_term H1{
+	text-align:left;
+	font-size:1.5em;
+	color:#00008B;
+	margin:0;
+	margin-left:100px;
+}
+
+li.heading {
+	font-weight:bold; padding-left:2px;
+	list-style:none;
+	color:purple;
+}
+
+#peopleimg{
+	margin-left:100px;
+}
+
+#definition{
+	border:3px ridge #00008b;
+	background:#ccccff;
+	margin:0 40px;
+	padding:20px;
+}
+
+#definition A {
+	font-weight:bold;
+	cursor:help;
+}
+
+#definition p.updated {display:block;text-align:right;margin:0;margin-top:1em;padding:0;font-size:.8em;}
+
+#dictmenu DIV {
+	margin-left:50px;
+	margin-bottom:35px;
+}
+
+#dictmenu DIV.letter{
+	margin:0;
+	margin-left:-50px;
+}
+
+#dictmenu DIV A {
+	display:block;
+	width:300px;
+}
+
+#dictmenu DIV.letter A {
+	float:left;
+	width:48px;
+	font-size:x-large;
+}
+
+#dictmenu DIV.letter A:hover {
+	background-color:transparent;
+	color:#00008B;
+}
+
+#dictmenu DIV A.top {
+	text-align:right; 
+	border-bottom: 1px solid #00008b;
+}
+
+#dictmenu DIV A.top:hover {
+	text-decoration:none;
+}
+
+
+
+/* *********
+   APPLETS
+   ********* */
+
+
+#applet {
+	border: 1px solid #660066;
+	padding:15px;
+}
+
+/* GAME PAYOFFS */
+
+table.gamematrix {
+	border-collapse: collapse;
+	margin-bottom:20px;
+}
+
+table.gamematrix td {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+table.gamematrix td.cent {
+	text-align: center;
+}
+
+table.gamematrix td.pay {
+	border: 1px solid maroon;
+	text-align: center;
+	padding-top:3px;
+	padding-bottom:3px;
+	width: 5em;
+}
+
+
+
+
+
+/* *********
+   MISC CLASSES
+   ********* */
+
+
+
+.clear {
+	clear:both;
+	height:0;
+}

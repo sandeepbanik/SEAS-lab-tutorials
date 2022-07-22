@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head>
+   <title>Game Theory Applet</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <meta name="description" content="Play the prisoner's dilemma against five different personalities. Part of Mike Shor's lecture notes for a course in Game Theory.">
+   <meta name="keywords" content="Game Theory Business Strategy prisoner's dilemma tit for tat grim trigger online applet simulation">
+   <meta name="author" content="Shaunak D. Bopardikar" >
+   <meta http-equiv="Window-target" content="_top">
+   <script type="text/javascript"> <!--
+      if (top!= self) top.location.replace(self.location.href); //-->
+   </script>
+   <link rel="stylesheet" type="text/css" href="mainstyle.css">
+
+	<link rel="stylesheet" type="text/css" href="PD.css">
+	<script type="text/javascript" src="PD.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- *********************** HEAD *********************** -->
+
+
+
+<!-- *********************** BODY *********************** -->
+
+<div id="main">
+
+  <!-- <div class="landingtext">
+      <div class="quote">
+         <h1 style="margin-bottom:3px;">
+            Game Theory Applet
+         </h1>
+         (<a href="http://www.gametheory.net/Mike/applets/PDilemma/">see instructions</a>)
+      </div>
+   </div> -->
+
+   <div id="PDwrapper">
+	  <table id="PDgame">
+		<tbody><tr><th></th><th></th><th colspan="2" id="opponentname"> Competitor 1</th></tr>
+		<tr><th></th><th></th><th>Conventional</th><th>Renewable</th></tr>
+		<tr><th rowspan="2" style="text-align:right;padding-right:1em;">You</th>
+			<th><input type="button" value="Conventional" onclick="cooperate()" id="bConventional"></th><td id="o11"> 0, 0
+			<!--<input id = "cc1" type = "text" value = " " size = "2" />,
+			<input id = "cc2" type = "text" value = " " size = "2" /> -->
+			 </td><td id="o10">&nbsp; 0, 2</td></tr>
+		<tr>                        
+			<th><input type="button" value="Renewable" onclick="defect()" id="bSolar"></th><td id="o01"> 2, 0  &nbsp; </td><td id="o00"> -2, -2 </td></tr>
+		<tr><th colspan="4">&nbsp;</th></tr>
+		<tr><th colspan="4" id="status"></th></tr>
+		<tr><th colspan="4">&nbsp;</th></tr>
+		<tr><th colspan="4" id="status2"></th></tr>  
+	  </tbody></table>
+
+	  <table id="PDresult">
+		<tbody><tr><th><br>Round</th><th>Your<br>Profit</th> <th>Competitor's<br>Profit</th></tr> 
+		<script language="javascript" type="text/javascript">
+		for (var a=1; a <= TOTALROUNDS; a++) {
+		<!-- document.write("<tr><td>"+a+" </td><td></td><td></td></tr>"); -->
+		 document.write("<tr><td>"+a+" </td><td></td><td></td><td></td></tr>");  
+		}
+		</script>
+		<!--<tr><td>1</td><td></td><td></td></tr><tr><td>2</td><td></td><td></td></tr><tr><td>3</td><td></td><td></td></tr><tr><td>4</td><td></td><td></td></tr><tr><td>5</td><td></td><td></td></tr><tr><td>6</td><td></td><td></td></tr><tr><td>7</td><td></td><td></td></tr><tr><td>8</td><td></td><td></td></tr><tr><td>9</td><td></td><td></td></tr><tr><td>10</td><td></td><td></td></tr><tr><td>11</td><td></td><td></td></tr><tr><td>12</td><td></td><td></td></tr><tr><td>13</td><td></td><td></td></tr><tr><td>14</td><td></td><td></td></tr><tr><td>15</td><td></td><td></td></tr><tr><td>16</td><td></td><td></td></tr><tr><td>17</td><td></td><td></td></tr><tr><td>18</td><td></td><td></td></tr><tr><td>19</td><td></td><td></td></tr><tr><td>20</td><td></td><td></td></tr><tr><td>21</td><td></td><td></td></tr><tr><td>22</td><td></td><td></td></tr><tr><td>23</td><td></td><td></td></tr><tr><td>24</td><td></td><td></td></tr><tr><td>25</td><td></td><td></td></tr> -->
+		<tr><th>Average</th><th></th><th></th></tr>
+	  </tbody></table>
+
+   <div style="height:1px;clear:both;">&nbsp;</div>
+
+   </div>
+   <div style="font-size:smaller;padding-top:2em;text-align:center;width:100%;">
+      <em>Original source of the applet: </em> 
+      � Mike Shor, 2001-2016 ALL RIGHTS RESERVED<br>
+      <a href="http://www.gametheory.net/about/copyright.html#applets">permissions &amp; copyright</a>
+   </div>
+
+</div>
+
+
+
+
+
+             
+</body></html>
