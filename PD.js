@@ -5,8 +5,8 @@
 //];
 
 var payoffs = [
-[[0,0], [0,2]],
-[[2,0],[-2,-2]],
+[[0,0], [-1,1]],
+[[-1,1],[0,0]],
 ]
 //payoffs[0,0] = eval(document.getElementById("cc1").value)
 //alert(payoffs[0,0])
@@ -145,8 +145,8 @@ function finishround(){
 		break;
   }
    //oppstrategy = (Math.random() > .8)? 1 : 0;
-	strategyname    =    strategy ? "Conventional" : "Renewable" ;
-	oppstrategyname = oppstrategy ? "Conventional" : "Renewable" ;
+	strategyname    =    strategy ? "Left" : "Right" ;
+	oppstrategyname = oppstrategy ? "Left" : "Right" ;
 	//oppstrategyname = (Math.random() > .5)? 1 : 0 ? "Conventional" : "Solar" ;
 	pay = payoffs[1-strategy][1-oppstrategy][0];
 	opppay = payoffs[1-strategy][1-oppstrategy][1];
